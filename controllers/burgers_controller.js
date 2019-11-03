@@ -1,4 +1,4 @@
-var express = require("express");
+ var express = require("express");
 
 var router = express.Router();
 
@@ -54,6 +54,7 @@ router.delete("/api/burgers/:id", function(req, res) {
     } else {
       res.status(200).end();
     }
+    res.redirect('/');
   });
 });
 
