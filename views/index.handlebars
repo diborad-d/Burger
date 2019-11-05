@@ -1,42 +1,38 @@
 <h1>Smokin’ Burger!</h1>
 
-{{!-- <h2>burgers that are not devoured!</h2> --}}
 
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{!-- {{> burgers/burger-block de vour=true}} --}}
   {{/unless}}
   {{/each}}
 </ul>
 
-{{!-- <h2>burgers that are devoured!</h2> --}}
 
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-  {{!-- {{> burgers/burger-block devoured=false}} --}}
   {{/if}}
   {{/each}}
 </ul>
 
 <h2>Add a burger</h2>
-<div class="cotainer">
-  <form class="create-form">
+<form class="create-form">
 
-    <div class="form-group">
-      <label for="burger">Insert Name:</label>
-      <input type="text" id="burger" name="name">
-    </div>
+  <div class="form-group">
+    <label for="burger">Insert Burger Name:</label>
+    <input type="text" id="newburger" name="name">
+  </div>
 
-    <div class="form-group">
-      {{!-- <label for="devoured">devoured?</label><br> --}}
-      <button> devour!</button>
-      <input type="text" name="devour">
-      <br>
-      <button> devoured!</button>
-      <input type="text" name="devoured"><br>
-    </div>
-    <button type="submit">Add burger</button>
-  </form>
+  <div class="form-group">
+    <button> devour!</button>
+    <input type="text" name="devour">
+    <br>
+    <button> devoured!</button>
+    <input type="text" name="devoured"><br>
+  </div>
+  <button type="submit">Add burger</button>
+</form>
+<div class="burgerList">
+
 </div>

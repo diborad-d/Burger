@@ -1,5 +1,7 @@
 // Set up MySQL connection.
 var mysql = require("mysql");
+const mime = require('mime');
+ 
 
 var connection = mysql.createConnection({
   host: "localhost",
